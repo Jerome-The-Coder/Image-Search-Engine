@@ -1,7 +1,6 @@
 const apikey = 'waok7-ih0CN-6OLuIOrNteJ5PNjpxbUL1LAAS8LDEBU';
 const search = document.querySelector('input')
 const btn1 = document.getElementById('searchbtn')
-const btn2 = document.getElementById('show-more')
 const results = document.getElementById('results')
 let pg = 1;
 
