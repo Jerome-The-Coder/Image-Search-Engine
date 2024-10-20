@@ -2,7 +2,7 @@ const apikey = 'waok7-ih0CN-6OLuIOrNteJ5PNjpxbUL1LAAS8LDEBU';
 const search = document.querySelector('input')
 const btn1 = document.getElementById('searchbtn')
 const results = document.getElementById('results')
-let pg = 1;
+let page = 1;
 
 async function getImages() {
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${search.value}&client_id=${apikey}`;
