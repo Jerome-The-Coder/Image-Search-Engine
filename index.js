@@ -1,6 +1,6 @@
 const apikey = 'waok7-ih0CN-6OLuIOrNteJ5PNjpxbUL1LAAS8LDEBU';
 const search = document.querySelector('input')
-const btn1 = document.getElementById('searchbtn')
+const showMoreBtn = document.getElementById('show-more')
 const results = document.getElementById('results')
 let page = 1;
 
@@ -24,7 +24,7 @@ async function getImages() {
     })
     page++;
     if (page > 1) {
-        btn2.style.display = 'block';
+        showMoreBtn.style.display = 'block';
     }
 }
 
@@ -34,7 +34,7 @@ addEventListener('submit', ev => {
     page = 1;
     getImages()
 })
-btn2.addEventListener('click', ev => {
+showMoreBtn.addEventListener('click', ev => {
     ev.preventDefault()
     getImages()
 })
