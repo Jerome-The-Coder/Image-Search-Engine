@@ -17,6 +17,7 @@ html {
     font-size: 1.5rem;
     cursor: url("text.png"), auto;
     margin-top: 25px;
+    background: white;
   }
   .img {
     margin-bottom: 60px;
